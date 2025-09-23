@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-post-js",
-    "path": "/pensieve/empty",
-    "result": {"data":{"markdownRemark":{"html":"<h2>Problem</h2>\n<h2>Solution</h2>","frontmatter":{"title":"empty","description":"empty","date":"","slug":"/pensieve/empty","tags":["empty"]}}},"pageContext":{}},
-    "staticQueryHashes": ["3115057458"]}

@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tag-js",
-    "path": "/pensieve/tags/empty/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"empty","description":"empty","date":"","slug":"/pensieve/empty","tags":["empty"]}}}]}},"pageContext":{"tag":"empty"}},
-    "staticQueryHashes": ["3115057458"]}
