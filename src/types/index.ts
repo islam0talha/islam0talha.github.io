@@ -13,6 +13,7 @@ export interface Project {
   description: string;
   featured: boolean;
   cover: string;
+  video?: string;
   external: string;
   github?: string;
   tech: string[];

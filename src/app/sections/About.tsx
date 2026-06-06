@@ -13,25 +13,44 @@ export function About() {
         <SectionHeading number="01" title="About Me" />
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          {/* Text Content */}
+          {/* Profile Picture */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="lg:col-span-2 flex justify-center lg:justify-start"
+          >
+            <div className="relative w-64 h-64 lg:w-full lg:aspect-square max-w-sm rounded-2xl overflow-hidden border border-border bg-surface shrink-0">
+              <img
+                src="/images/profile.jpg"
+                alt="Islam Talha"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
+
+          {/* Text + Skills */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-3 space-y-6"
+            className="lg:col-span-3 space-y-8"
           >
-            {aboutContent.paragraphs.map((paragraph, index) => (
-              <p
-                key={index}
-                className="text-base text-muted leading-relaxed"
-              >
-                {paragraph}
-              </p>
-            ))}
+            <div className="space-y-6">
+              {aboutContent.paragraphs.map((paragraph, index) => (
+                <p
+                  key={index}
+                  className="text-base text-muted leading-relaxed"
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
 
             {/* Education */}
-            <div className="pt-6 space-y-4">
+            <div className="space-y-4">
               <h3 className="text-sm font-mono text-accent flex items-center gap-2">
                 <GraduationCap size={16} />
                 Education
@@ -56,23 +75,17 @@ export function About() {
                 </div>
               ))}
             </div>
-          </motion.div>
 
-          {/* Skills */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-2"
-          >
-            <h3 className="text-sm font-mono text-accent mb-6">
-              Technologies I work with
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <TechTag key={skill.name} name={skill.name} />
-              ))}
+            {/* Skills */}
+            <div>
+              <h3 className="text-sm font-mono text-accent mb-4">
+                Technologies I work with
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <TechTag key={skill.name} name={skill.name} />
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>

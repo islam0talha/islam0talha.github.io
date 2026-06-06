@@ -29,13 +29,23 @@ export function FeaturedProjects() {
                 index % 2 === 1 ? "lg:flex-row-reverse" : ""
               }`}
             >
-              {/* Image */}
+              {/* Media */}
               <div
                 className={`relative aspect-video rounded-xl overflow-hidden bg-surface border border-border ${
                   index % 2 === 1 ? "lg:order-2" : ""
                 }`}
               >
-                {project.cover ? (
+                {project.video ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  >
+                    <source src={project.video} type="video/mp4" />
+                  </video>
+                ) : project.cover ? (
                   <Image
                     src={project.cover}
                     alt={project.title}

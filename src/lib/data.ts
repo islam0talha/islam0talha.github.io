@@ -147,6 +147,7 @@ export const projects: Project[] = [
       "An AI-powered avatar system for immersive event experiences. Uses LLMs and computer vision to create interactive, personalized avatar interactions.",
     featured: true,
     cover: "",
+    video: "/videos/ai-avatar.mp4",
     external: "",
     tech: ["Python", "LLMs", "Computer Vision", "Unity", "C#"],
     bullets: [
