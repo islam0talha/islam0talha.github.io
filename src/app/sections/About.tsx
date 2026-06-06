@@ -23,7 +23,7 @@ export function About() {
           >
             <div className="relative w-64 h-64 lg:w-full lg:aspect-square max-w-sm rounded-2xl overflow-hidden border border-border bg-surface shrink-0">
               <img
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 alt="Islam Talha"
                 className="w-full h-full object-cover"
               />
