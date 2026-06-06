@@ -157,6 +157,54 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "interactive-wall",
+    title: "Interactive Wall",
+    description:
+      "A large-scale interactive wall installation for events that transforms physical spaces into immersive digital experiences. Attendees interact with dynamic visuals through touch and motion, creating memorable brand activations that dramatically increase booth traffic and audience engagement.",
+    featured: true,
+    cover: "/images/interactive-wall.png",
+    external: "",
+    tech: ["Unity", "C#", "Touch Sensors", "Projection Mapping", "Hardware Integration"],
+    bullets: [
+      "Built interactive wall system with real-time touch and motion detection",
+      "Integrated hardware sensors with Unity for seamless physical-digital interaction",
+      "Deployed at live events with 3x increase in booth engagement time",
+      "Created dynamic visual effects that respond to audience movement",
+    ],
+  },
+  {
+    slug: "tangible-screen",
+    title: "Tangible Screen",
+    description:
+      "A tangible interactive screen that blends physical objects with digital interfaces, allowing event attendees to manipulate real items to control on-screen content. This hands-on approach breaks the passive-viewing barrier and creates deep, memorable interactions that keep audiences engaged longer.",
+    featured: true,
+    cover: "/images/tangible-screen.png",
+    external: "",
+    tech: ["Unity", "C#", "Computer Vision", "Object Recognition", "Hardware Integration"],
+    bullets: [
+      "Developed object recognition system that maps physical items to digital actions",
+      "Built real-time computer vision pipeline for tangible interaction detection",
+      "Increased event dwell time by turning passive viewers into active participants",
+      "Created modular system adaptable for different brands and event themes",
+    ],
+  },
+  {
+    slug: "interactive-webinar",
+    title: "Interactive Webinar",
+    description:
+      "A live event engagement platform that transforms passive webinar attendance into active participation. Attendees use their mobile devices to open quizzes, submit responses, and interact directly with instructors in real-time. This two-way communication model increases attention span and knowledge retention during corporate events and training sessions.",
+    featured: true,
+    cover: "/images/interactive-webinar.jpg",
+    external: "",
+    tech: ["Node.js", "React", "WebSocket", "Mobile Web", "Real-time Sync"],
+    bullets: [
+      "Built real-time quiz and polling system accessible via attendees' mobile browsers",
+      "Implemented WebSocket infrastructure for instant instructor-audience interaction",
+      "Increased attendee engagement by 4x compared to traditional one-way presentations",
+      "Created analytics dashboard for instructors to track live audience comprehension",
+    ],
+  },
+  {
     slug: "capital-war",
     title: "Capital War",
     description:
